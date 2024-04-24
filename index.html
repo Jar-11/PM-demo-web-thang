@@ -3,45 +3,70 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>C.J.'s Cool Thang</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #ddd;
-      background-image: url("webbackground.jpg");
-      color: #333;
-      font-family: "Silkscreen";
-      font-weight: 400;
-      font-style: normal;
-      font-size: 20px;
-    }
+    <meta charset="utf-8">
+    <title>C.J.'s Cool Thang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #ddd;
+            background-image: url("webbackground.jpeg");
+            color: #333;
+            font-family: "Silkscreen";
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
 
-    h1 {
-      font-weight: 900;
-      COLOR: #000;
-      text-align: center;
-    }
+        img.bg {
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      margin-left: auto;
-      margin-right: auto;
-      width: 550px;
-    }
+            min-height: 100%;
+            min-width: 1024px;
 
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
 
-    /* a {
+            width: 100%;
+            height: auto;
+
+
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (max-width: 1024px) {
+
+           
+            img.bg {
+                left: 50%;
+                margin-left: -512px;
+                /* 50% */
+            }
+        }
+
+        h1 {
+            font-weight: 900;
+            COLOR: #000;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 550px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        /* a {
       color: rgb(162, 162, 219);
       font-weight: 800;
       text-decoration: none;
@@ -54,62 +79,57 @@
       font-size: 30px;
     }
     */
-    a {
-      text-decoration: none;
-      color: black;
-      display: block;
-      background-color: rgb(187, 105, 241);
-      border: 2px solid rgb(152, 76, 202);
-      width: 150px;
-      text-align: center;
-      margin-top: 50px;
-      margin-left: 50px;
-      margin-right: 50px;
-      border-radius: 20px;
-      transition: 1s transform, 1s box-shadow;
-      box-shadow: 0 0 0 transparent;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            background-color: rgb(187, 105, 241);
+            border: 2px solid rgb(152, 76, 202);
+            width: 150px;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 20px;
+            transition: 1s transform, 1s box-shadow;
+            box-shadow: 0 0 0 transparent;
+        }
 
-    a:hover {
-      transform: scale(2);
-      box-shadow: 0 10px 15px #b08cca;
-    }
+        a:hover {
+            transform: scale(2);
+            box-shadow: 0 10px 15px #b08cca;
+        }
 
-    li {
-      display: inline-block;
-    }
+        li {
+            display: inline-block;
+        }
 
-    .glaggleland {
-      text-align: center;
-      width: 250px;
-      height: 250px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: auto;
-      background-color: yellow;
-      border: 2px solid black;
-      font-size: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-    }
-  </style>
+        .glaggleland {
+            text-align: center;
+            width: 250px;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: auto;
+            background-color: yellow;
+            border: 2px solid black;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body>
-  <h1><strong>WELCOME</strong></h1>
-  <p>My name is C.J. Feckovic😼</p>
-  <p>I <2 coding</p>
-      <p>I go to LCC and I code</p>
-      <p>I go home and I code</p>
-      <p>YIPPEEE</p>
-      <img src="PM web thang/PM web thang/images/potraitart.jpg" alt="self portait art" class="center" />
-      <ul>
+
+    <img src="PM web thang/PM web thang/images/potraitart.jpg" alt="self portait art" class="center" />
+    <ul>
         <li><a href="text.html">Tortellini Info</a></li>
         <li><a href="boxes.html">Other</a></li>
-      </ul>
-      <a href="glaggleland.html" class="glaggleland">GLAGGLE LAND</a>
+    </ul>
+    <a href="glaggleland.html" class="glaggleland">GLAGGLE LAND</a>
 </body>
 
 </html>
