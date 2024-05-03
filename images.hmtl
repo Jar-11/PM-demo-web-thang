@@ -4,7 +4,7 @@
 <title>Images Page </title>
 <style>
     body {
-        background-image: url("images/pexels-image.jpg");
+        background-image: url("pexels-image.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         color: #ff9500;
@@ -23,13 +23,13 @@ a{
     }
     h1{
         display: block;
-        background-image: url("images/pexels-image.jpg");
+        background-image: url("pexels-image.jpg");
     }
 </style>
 </head>
 
 <body>
-    <img src="images/pexels-image.jpg" alt="Image">
+    <img src="pexels-image.jpg" alt="Image">
     <h1>Meow</h1>
     <a href="index.html">Go Back</a>
 </body>
