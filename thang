@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Honk&display=swap"
+        rel="stylesheet">
+    <meta charset="utf-8">
+    <title>My Grid Page :P</title>
+    <style>
+        body {
+            background: #eee;
+            color: #333;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 2fr 1fr;
+            grid-template-rows: 200px 1fr 100px;
+            gap: 1% 1%;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Header Header Header"
+                "Navigation Main Ads"
+                "Footer Footer Footer";
+        }
+
+        article {
+            grid-area: Main;
+            background: #C0BBED;
+            padding: 10px;
+            font-family: "Courier Prime";
+        }
+
+        .Ads {
+            grid-area: Ads;
+            background: #C0BBED;
+        }
+
+        Header {
+            grid-area: Header;
+            background: #C0BBED;
+            font-family: "Honk";
+            font-size: 40px;
+        }
+
+        Footer {
+            grid-area: Footer;
+            background: #C0BBED;
+        }
+
+        .Navigation {
+            grid-area: Navigation;
+            background: #C0BBED;
+            padding-left: 10px;
+            font-family: "Courier Prime";
+        }
+
+        .center {
+            text-align: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transform: scale(1);
+            transition: all 1s;
+            margin-left: 10px;
+            padding: 10px;
+            display: block;
+            font-size: 20px;
+        }
+
+        a:hover {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article>
+            <h3>Log<sub>b</sub>a = x</h3>
+            <h3>b<sup>x</sup> = a</h3>
+            <h1>Example:</h1>
+            <h3>Log<sub>2</sub>8 = 3</h3>
+            <h3>is the same as</h3>
+            <h3>2<sup>3</sup> = 8</h3>
+        </article>
+        <div class="Ads">
+            <a href="glaggleland.html"><img src="PM web thang/PM web thang/images/static-assets-upload11758716458121278800.gif">CLICK!!!!</a>
+        </div>
+        <Header>
+            <h1 class="center">Welcome to C.J.'s WACKY WEBSITE</h1>
+        </header>
+        <Footer></footer>
+        <div class="Navigation">
+            <h1>Navigation</h1>
+            <a href="html">First link</a>
+            </br>
+            <a href="html">Second link</a>
+            </br>
+            <a href="html">Third link</a>
+            </br>
+            <a href="html">Fourth link</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
