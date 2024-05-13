@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Seahorse Serenity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#2b839b, #22687b);
+            display: grid;
+            grid-template-columns: 29% 70%;
+            grid-template-rows: 120px 2.2fr 120px;
+            gap: 2% 2%;
+            grid-template-areas:
+                "Header Header"
+                "Navigation Main"
+                "Footer Footer";
+            width: 90%;
+            height: 1700px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        article {
+            grid-area: Main;
+            background: #3333335e;
+            background-image: url("images/underwater.jpg");
+            background-size: cover;
+            padding: 10px;
+            text-align: justify;
+            padding-left: 20px;
+        }
+
+        article p {
+            text-align: left;
+            font-size: 18px;
+            margin-top: 0px;
+            margin-left: 10px;
+            padding-left: 0px;
+        }
+
+        article h1 {
+            font-family: "Permanent Marker";
+            font-size: 35px;
+            text-align: center;
+            margin-top: 10px;
+            background-image: linear-gradient(#25a4ff, #23d39b);
+            color: transparent;
+            background-clip: text;
+            padding-left: -20px;
+        }
+
+        article h2 {
+            font-family: "Permanent Marker";
+            color: #25beff;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+
+        footer {
+            grid-area: Footer;
+            background: #3333335e;
+            font-size: 20px;
+            height: 60px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #79bcff;
+            transition: .5s;
+        }
+
+        footer a:hover {
+            color: #dbff79;
+        }
+
+        nav {
+            grid-area: Navigation;
+            background: #3333335e;
+            background-image: url("images/lilypads.png");
+            background-size: cover;
+            font-family: "Permanent Marker";
+            height: 400px;
+        }
+
+        header {
+            grid-area: Header;
+            background: #3333335e;
+            font-family: "Permanent Marker";
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        footer li {
+            display: inline;
+        }
+
+        header li {
+            display: inline;
+        }
+
+
+        nav a {
+            font-size: 20px;
+            display: block;
+            margin: 20px;
+            color: #23d39b;
+            transition: .5s;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            transform: scale(1.3);
+            margin-left: 55px;
+            color: #25beff;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav h1 {
+            font-size: 35px;
+            text-align: center;
+            margin-top: 20px;
+            background-image: linear-gradient(#25a4ff, #23d39b);
+            color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            text-align: center;
+            margin-top: -70px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/bubbles.gif" alt="bubbles" />
+        <svg viewbox="-10 3 120 20">
+            <defs>
+                <linearGradient id="gradient">
+                    <stop color="#000" />
+                </linearGradient>
+                <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                        mask="url(#mask)" fill="url(#gradient)">
+                        <animateTransform attributeName="transform" begin="0s" dur="2s" type="translate" from="0,1"
+                            to="40,1" repeatCount="indefinite" />
+                    </path>
+                </pattern>
+            </defs>
+            <text text-anchor="middle" x="50" y="15" font-size="10" fill="white" fill-opacity="0.1">All About
+                Seahorses</text>
+            <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)" fill-opacity="1">All About
+                Seahorses</text>
+        </svg>
+        <img src="images/bubbles.gif" alt="bubbles" />
+    </header>
+
+    <nav>
+        <h1>More Seahorse:</h1>
+        <ul>
+            <li><a href="#" class="one">Seahorse Home</a></li>
+            <li><a href="#">Seahorse News</a></li>
+            <li><a href="#">Seahorse Science</a></li>
+            <li><a href="#">Seahorse Fiction</a></li>
+            <li><a href="#">Seahorse Fables</a></li>
+            <li><a href="#">Seahorse Songs</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>SEAHORSE FACTS</h1>
+        <h2>Name</h2>
+        <p>The Latin name for seahorse is Hippocampus which means "Horse
+            Caterpillar"</p>
+        <h2>What is a Seahorse</h2>
+        <p>Seahorses are fish. They live in water, breath through gills and have a
+            swim bladder. However they do not have caudal fins and have a long
+            snake-like tail. They also have a neck and a snout that points down.</p>
+        <h2>Eyesight</h2>
+        <p>Seahorses have excellent eyesight and their eyes are able to work
+            independently on either side of their head. This means they can look
+            forwards and backwards at the same time! This is particularly useful as
+            they hunt for food by sight.</p>
+        <h2>Snout</h2>
+        <p>Seahorses have long thin snouts enabling them to probe into nooks and
+            crannies for food. When they find food they suck it up through their
+            snouts like a vacuum cleaner. Their snouts can expand if their prey is
+            larger than the snout. They are not able to chew and have to
+            disintegrate the food as they eat it.</p>
+        <h2>Diet</h2>
+        <p>Seahorses eat small crustacea such as Mysis Shrimp. An adult eats 30-50
+            times a day. Seahorse fry (baby seahorses) eat a staggering 3000 pieces
+            of food per day.</p>
+        <h2>Tail</h2>
+        <p>Seahorses have a prehensile tail. This allows them to grip onto
+            eelgrass and other weeds and prevents them from being washed away by
+            strong currents and waves.</p>
+        <h2>Colour</h2>
+        <p>Seahorses can change colour very quickly and match any surroundings in
+            which it finds itself. They have even been known to turn bright red to
+            match floating debris.</p>
+        <p>Both males and females also change colour during their courtship
+            display.</p>
+        <h2>Body</h2>
+        <p>Unlike most other fish, seahorses have an exoskeleton. Their bodies are
+            made up of hard, external, bony plates that are fused together with a
+            fleshy covering. They do not have scales.</p>
+    </article>
+
+    <footer>
+        <ul>
+            <li>Seahorse Friends:</li>
+            <li><a href="http://www.theseahorsetrust.org/seahorse-facts.aspx" target="_blank">The Seahorse Trust</a> |
+            </li>
+            <li><a href="http://www.nationalgeographic.com/animals/fish/group/seahorses/" target="_blank">National
+                    Geographic</a> |</li>
+            <li><a href="http://seahorse.com/" target="_blank">Seahorse.com</a> |</li>
+            <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All
+                    The Sea</a></li>
+
+        </ul>
+
+    </footer>
+
+    <p>&copy; Seahorse Serenity 2024</p>
+
+</body>
+
+</html>
